@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="DateCollectionCell" customModule="Demo1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJB-Re-fkw">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTQ-ga-OOc">
+                        <rect key="frame" x="0.0" y="25" width="50" height="25"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0J-Xg-sOp">
+                        <rect key="frame" x="0.0" y="50" width="50" height="25"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-CO-dsU">
+                        <rect key="frame" x="0.0" y="75" width="50" height="5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="ynS-eJ-GkS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vJB-Re-fkw" secondAttribute="trailing" id="0c9-j0-C35"/>
+                <constraint firstItem="vJB-Re-fkw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3Zk-Cx-6lc"/>
+                <constraint firstItem="s0J-Xg-sOp" firstAttribute="top" secondItem="KTQ-ga-OOc" secondAttribute="bottom" id="7Xc-Zj-6Rx"/>
+                <constraint firstItem="7cH-CO-dsU" firstAttribute="top" secondItem="s0J-Xg-sOp" secondAttribute="bottom" id="Jii-ax-4Wz"/>
+                <constraint firstItem="vJB-Re-fkw" firstAttribute="height" secondItem="KTQ-ga-OOc" secondAttribute="height" id="LGU-zD-IPh"/>
+                <constraint firstAttribute="trailing" secondItem="KTQ-ga-OOc" secondAttribute="trailing" id="NPx-AI-LuH"/>
+                <constraint firstAttribute="trailing" secondItem="s0J-Xg-sOp" secondAttribute="trailing" id="S0B-nB-VnF"/>
+                <constraint firstItem="vJB-Re-fkw" firstAttribute="height" secondItem="s0J-Xg-sOp" secondAttribute="height" id="S6e-Bb-YbF"/>
+                <constraint firstItem="KTQ-ga-OOc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TFf-tC-hDv"/>
+                <constraint firstItem="7cH-CO-dsU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YVr-Bu-wXq"/>
+                <constraint firstItem="KTQ-ga-OOc" firstAttribute="top" secondItem="vJB-Re-fkw" secondAttribute="bottom" id="Yup-lV-A1d"/>
+                <constraint firstItem="s0J-Xg-sOp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fZ2-KD-EPc"/>
+                <constraint firstAttribute="trailing" secondItem="7cH-CO-dsU" secondAttribute="trailing" id="hlI-0U-Byk"/>
+                <constraint firstItem="vJB-Re-fkw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oE2-Pr-Rwl"/>
+                <constraint firstAttribute="bottom" secondItem="7cH-CO-dsU" secondAttribute="bottom" id="r8i-v7-tku"/>
+            </constraints>
+            <connections>
+                <outlet property="indicator" destination="7cH-CO-dsU" id="tUQ-Ww-A9p"/>
+                <outlet property="labelDate" destination="KTQ-ga-OOc" id="WnZ-Sa-r1c"/>
+                <outlet property="labelMonth" destination="vJB-Re-fkw" id="pBh-FZ-6or"/>
+                <outlet property="labelWeekDay" destination="s0J-Xg-sOp" id="dUU-P3-bec"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="121.875"/>
+        </collectionViewCell>
+    </objects>
+</document>
